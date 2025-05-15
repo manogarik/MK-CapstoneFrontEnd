@@ -10,6 +10,7 @@ export default function Confirm(){
     const [passengers,setPassengers]=useState([]);
     const nav = useNavigate();
    useEffect(() => {
+    window.scrollTo(0, 0);
            
            if (selectedFlight?._id) {
              getPassengers(selectedFlight._id).then((res)=>{

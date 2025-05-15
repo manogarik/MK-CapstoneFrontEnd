@@ -1,4 +1,3 @@
-/* Confirm.css */
 .modal-overlay {
   display: flex;
   flex-direction: column;
@@ -17,6 +16,4 @@
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-
 
