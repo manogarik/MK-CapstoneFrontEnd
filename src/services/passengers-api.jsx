@@ -4,7 +4,7 @@ export const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 //function to post a new passenger
 export const createPassenger = async (passenger) => {
-    const URL = '${API_BASE_URL}passengers'
+    const URL = `${API_BASE_URL}passengers`
     const response = await axios.post(URL, passenger)
     return response
 }

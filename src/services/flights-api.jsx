@@ -4,7 +4,7 @@ export const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 //Get Airports
 export const getAirports = async () => {
-    const URL = '${API_BASE_URL}flights/airports'
+    const URL = `${API_BASE_URL}flights/airports`
     const response = await axios.get(URL)
     return response
 }
