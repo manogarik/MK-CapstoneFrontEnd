@@ -1,23 +1,24 @@
 import axios from 'axios'
 
+export const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 //Get Airports
 export const getAirports = async () => {
-    const URL = 'http://localhost:3000/flights/airports'
+    const URL = '${API_BASE_URL}flights/airports'
     const response = await axios.get(URL)
     return response
 }
 
 //Fetch flights
 export const searchFlights = async(origin,destination) => {
-    const URL = `http://localhost:3000/flights/search?origin=${origin}&destination=${destination}`
+    const URL = `${API_BASE_URL}flights/search?origin=${origin}&destination=${destination}`
     const response = await axios.get(URL)
     return response
 }
 //Adding passengerdetails to flight
 export const addpassenger = async(id,passengerId)=>
 {
-    const URL= `http://localhost:3000/flights/${id}/addpassenger`
+    const URL= `${API_BASE_URL}flights/${id}/addpassenger`
     const response = await axios.put(URL,{passengerId})
     return response
 }
@@ -25,7 +26,7 @@ export const addpassenger = async(id,passengerId)=>
 //Get passengers using flightid
 export const getPassengers = async (id)=>
 {
-    const URL = `http://localhost:3000/flights/${id}`
+    const URL = `${API_BASE_URL}${id}`
     const response = await axios.get(URL)
     return response;
 }
@@ -33,7 +34,7 @@ export const getPassengers = async (id)=>
 //remove passenger details from flight
 export const removepassenger = async(flightId,passengerId) =>
 {
-    const URL = `http://localhost:3000/flights/${flightId}/passengers/${passengerId}`
+    const URL = `${API_BASE_URL}${flightId}/passengers/${passengerId}`
     const response = await axios.delete(URL)
     return response;
 }

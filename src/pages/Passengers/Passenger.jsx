@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { createPassenger } from '../../services/passengers-api-jsx';
+import { createPassenger } from '../../services/passengers-api.jsx';
 import { useFlightContext } from '../../context/FlightContext';
 import './Passenger.css';
 import { addpassenger,getPassengers,removepassenger } from '../../services/flights-api';
-import { addFlight ,deletePassenger} from '../../services/passengers-api-jsx';
+import { addFlight ,deletePassenger} from '../../services/passengers-api.jsx';
 import Header from '../../components/Header/Header';
 
  
