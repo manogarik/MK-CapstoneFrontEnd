@@ -26,7 +26,7 @@ export const addpassenger = async(id,passengerId)=>
 //Get passengers using flightid
 export const getPassengers = async (id)=>
 {
-    const URL = `${API_BASE_URL}${id}`
+    const URL = `${API_BASE_URL}flights/${id}`
     const response = await axios.get(URL)
     return response;
 }
