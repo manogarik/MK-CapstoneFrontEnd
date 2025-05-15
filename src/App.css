@@ -1,0 +1,8 @@
+.homepage-bg{
+  background-image: url('/Flight.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  align-items: center;
+  
+}

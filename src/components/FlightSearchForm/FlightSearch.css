@@ -1,0 +1,13 @@
+
+.flight-search-wrapper {
+    height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+  }
+  
+  .flight-search-card {
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }

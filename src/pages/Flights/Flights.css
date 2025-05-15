@@ -1,0 +1,19 @@
+.flights-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .flight-card {
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    transition: transform 0.2s ease;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flight-card input[type="radio"] {
+    margin-top: 6px;
+  }

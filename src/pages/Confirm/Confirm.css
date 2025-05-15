@@ -1,0 +1,27 @@
+/* Confirm.css */
+.modal-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 500px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.home {
+  margin-top: 400px;
+ text-align: center;
+ margin-left:50px;
+ margin-right:400px;
+}
