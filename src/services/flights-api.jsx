@@ -34,7 +34,7 @@ export const getPassengers = async (id)=>
 //remove passenger details from flight
 export const removepassenger = async(flightId,passengerId) =>
 {
-    const URL = `${API_BASE_URL}${flightId}/passengers/${passengerId}`
+    const URL = `${API_BASE_URL}flights/${flightId}/passengers/${passengerId}`
     const response = await axios.delete(URL)
     return response;
 }
