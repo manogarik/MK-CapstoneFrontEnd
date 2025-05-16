@@ -46,14 +46,35 @@ export default function FlightSearch() {
                 return formattedSelectedDate === flight_date
             })
             console.log(filtered_flights);
+            console.log(flights);
+            const newflights= [];
+            if(filtered_flights.length>0)
+            {
+                flights.forEach((flight)=>
+                {
+                    if(flight._id !== filtered_flights[0]._id)
+                        newflights.push(flight);
+                })
+                console.log(newflights);
                 setFlights({
                     match : filtered_flights,
-                    available : flights});
+                    available : newflights});
                 setError('');
                 nav('/search'); 
-
+            }
+            else{
+                setFlights({
+                    available:flights
+                });
+                setError('');
+                nav('/search');
+            }
+            
+            })
+            
+           
         } 
-      )}
+      
       catch(error)
       {
         setError('Error fetching flights, Try Again')
@@ -97,7 +118,7 @@ export default function FlightSearch() {
             </div>
 
             <div className="mb-4">
-              <label className="form-label">Number of Tickets</label>
+              <label className="form-label">Number of Passengers</label>
               <input type="number" className="form-control" min="1" name="tickets" required />
             </div>
 

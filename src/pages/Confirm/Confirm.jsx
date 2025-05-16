@@ -35,7 +35,8 @@ export default function Confirm(){
                  <li><strong>Flight #:</strong> {selectedFlight.flightNumber}</li>
                  <li><strong>Origin:</strong> {selectedFlight.origin}</li>
                  <li><strong>Destination:</strong> {selectedFlight.destination}</li>
-                 <li><strong>Departure Date:</strong> {new Date(selectedFlight.departureDate).toLocaleDateString()}</li>
+                 <li><strong>Departure Date:</strong> {selectedFlight.departureDate}</li>
+                 
                </ul>
        
                <h5 className="mt-4">Passengers List</h5>
